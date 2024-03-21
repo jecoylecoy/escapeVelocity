@@ -291,7 +291,7 @@ function initLandbot() {
   if (!myLandbot) {
     var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
     s.addEventListener('load', function() {
-      myLandbot = new Landbot.Popup({
+      var myLandbot = new Landbot.Livechat({
         configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2164301-DVC00T7CR39MEA40/index.json',
       });
     });
